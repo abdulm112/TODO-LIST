@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.todos {
+    background: linear-gradient(to bottom right, #2e3192, #1bff);
+    min-height: 10vh;
+    width: 27%;
+    border-radius: 20px;
+    padding: 10px 40px;
+    color: white;
+}
+
+.btn {
+    display: flex;
+    gap: 15px;
+    padding-top: 10px;
+    height: 50px;
+}
+
+.input {
+    /* border: none; */
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+    position: relative;
+    color: black;
+    outline: none;
+    width: 250px;
+    border-color: #1bff;
+}
+
+.btn-2 {
+    width: 100px;
+    border-radius: 10px;
+    border: 2px solid;
+    background: linear-gradient(to bottom right, #2e3192, #1bff);
+    color: white;
+    height: px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-2:hover {
+    background: blue;
+    transform: scale(1.09);
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.greeting {
+    opacity: 0;
+    font-size: 30px;
+    color: #1bff;
+    animation: fadeInUp 1s ease-in forwards infinite;
+    /* Animation for fade-in effect */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        /* Final state of the animation */
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media only screen and (max-width: 468px){
+    body{
+        overflow: hidden;
+    }
+    .greeting{
+        font-size: 20px;
+    }
+    .input{
+        width: 230px;
+    }
+    .todos{
+        width: 90%;
+    }
+}
