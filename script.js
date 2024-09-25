@@ -1,5 +1,3 @@
-// var whatisyourname = prompt
-// alert('Welcome ' + whatisyourname)
 function abdul() {
   let input = document.querySelector(".input").value;
   if (input.length <= 0) {

@@ -13,12 +13,14 @@
 }
 
 .todos {
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(to bottom right, #2e3192, #1bff);
     min-height: 10vh;
-    width: 27%;
+    min-width: 27vw;
     border-radius: 20px;
     padding: 10px 40px;
-    color: white;
+    color: white
 }
 
 .btn {
@@ -69,6 +71,28 @@ body {
     color: #1bff;
     animation: fadeInUp 1s ease-in forwards infinite;
     /* Animation for fade-in effect */
+}
+.btn-3 button{
+    width: 120px;
+    font-size: 17px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10px;
+    border: 2px solid;
+    background: linear-gradient(to bottom right, #2e3192, #1bff);
+    color: white;
+    height: 35px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-3:hover{
+    background-color: blue;
+    transform: scale(1.15);
+}
+.div-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 300px 10px;
 }
 
 @keyframes fadeInUp {
